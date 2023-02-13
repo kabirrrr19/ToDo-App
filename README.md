@@ -1,5 +1,5 @@
 # ToDo-App
- * The Project is a TODO list app using HTML, CSS, Javascript, Bootstrap, MySQL, Express, Node.js, etc. <br>
+ * The Project is a TODO list app using HTML, CSS, Javascript, Handlebards Templating Engine, Bootstrap, MySQL, Express, Node.js, etc. <br>
  * It consists of a register page, a login page and a home page.  <br>
  * The register page consists of username, email, password and confirm password input. <br>
  * If the username and the email are not present in the database it allows the registration if <br>
