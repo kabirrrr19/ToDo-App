@@ -34,7 +34,7 @@ exports.login = async(req, res) => {
         db.query('SELECT * FROM users WHERE email = ?', [email], async(error, results) => {
                                                     // results[0] means the first result and can access its values
             if ( !results || !(await bcrypt.compare(password, results[0].password) ) ) {
-                
+                console.log(results);
                 res.status(400).render('login', {
                     message : 'The Email or the password is incorrect'
                 });
@@ -58,7 +58,7 @@ exports.login = async(req, res) => {
                 }
 
                 res.cookie('jwt', token, cookieOptions);
-                res.status(200).render('index');
+                res.status(200).render('home');
 
             }
 

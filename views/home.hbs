@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>To Do App</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <!-- Logo Image -->
+                <img src="https://res.cloudinary.com/mhmd/image/upload/v1557368579/logo_iqjuay.png" width="45" alt="" class="d-inline-block align-middle mr-2">
+                <!-- Logo Text -->
+                <span class="text-uppercase font-weight-bold">TO DO APP</span>
+            </a>
+
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="/login" class="nav-link">Login</a></li>
+                    <li class="nav-item active"><a href="/home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/register" class="nav-link">Register<span class="sr-only">(current)</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <form id="inp">
+        <input  class="col-sm-9" id="input" type="text" value="" placeholder="enter a task">
+        <button class="col-sm-4 col-md-4 col-lg-4" id="btn-add">Add Task </button>
+    </form>
+    <main id="task-wrapper" class="">
+        <ul id="list">
+            {{!-- <li id="task-1" class="task">
+                <span class="word">Welcome to my To Do App </span> 
+                <span>
+                    <span class="date"></span>
+                    <a href=""> <i id="trash" class="fas fa-trash font-awesome"></i></a> 
+                </span>
+            </li>         --}}
+        </ul>
+    </main>
+</body>
+<script src="/js/script.js"></script>
+</html>

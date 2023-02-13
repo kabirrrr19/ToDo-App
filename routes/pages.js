@@ -7,8 +7,8 @@ router.get('/', (req, res) => {
 });
 
 // THIS EXTRA ROUTE IS ADDED TO ACCESS INDEX PAGE FROM REGISTER PAGE AND LOGIN PAGE
-router.get('/index', (req, res) => {
-    res.render('index');
+router.get('/home', (req, res) => {
+    res.render('home');
 });
 
 router.get('/login', (req, res) => {

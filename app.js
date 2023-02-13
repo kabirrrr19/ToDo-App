@@ -3,6 +3,7 @@ const mysql = require('mysql');
 const dotenv = require('dotenv');
 const cookieParser = require('cookie-parser');
 const path = require('path');
+const PORT = dotenv.PORT || 3000;
 // const { resolveSoa } = require('dns');
 const app = express();
 
@@ -46,10 +47,11 @@ db.connect( (err) => {
 // Define Routes
 app.use('/', require('./routes/pages'));
 app.use('/auth', require('./routes/auth'));
+app.use('/dbData', require('./routes/dbService'));
 // whatever starts with auth we go requiring ./routes/auth
 // jaha /auth ho vaha ./routes/auth chahiye
 
 
-app.listen(3000, (req, res) => {
-    console.log('server started on port 3000');
+app.listen(PORT, (req, res) => {
+    console.log(`server started on port ${PORT}`);
 });
